@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        
+          purpleNormal: '#720439',
         black: {
           light: '#e9e9e9',
           lightHover: '#dddddd',

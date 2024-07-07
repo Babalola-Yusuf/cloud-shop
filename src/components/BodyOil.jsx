@@ -1,4 +1,4 @@
-// src/components/BestSellers.jsx
+// src/components/BodyOil.jsx
 import React from 'react';
 
 const products = [
@@ -7,10 +7,11 @@ const products = [
   { id: 3, name: "Best Seller 3", price: "$40" },
 ];
 
-const BestSellers = () => (
+const BodyOil = () => (
   <div className="best-sellers py-8">
-    <h2 className="text-2xl font-bold mb-4">Our Best Sellers</h2>
+    <h2 className="text-2xl font-bold mb-4">Body Oil</h2>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* Render the products here using the products array */}
       {products.map((product) => (
         <div key={product.id} className="bg-gray-200 p-4 text-center">
           <h3>{product.name}</h3>
@@ -21,4 +22,4 @@ const BestSellers = () => (
   </div>
 );
 
-export default BestSellers;
+export default BodyOil;

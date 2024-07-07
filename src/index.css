@@ -13,3 +13,13 @@ body {
 .hero{
     background-image: url(../public/images/medium-shot-different-women-posing\ 1.png);
 }
+
+.carousel-words{
+    width: 682px;
+    height: 154px;
+}
+
+.product-categories{
+    width: 896px;
+    height: 528px;
+}
