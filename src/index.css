@@ -9,3 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.hero{
+    background-image: url(../public/images/medium-shot-different-women-posing\ 1.png);
+}
