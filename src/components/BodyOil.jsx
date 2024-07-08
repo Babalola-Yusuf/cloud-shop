@@ -14,9 +14,10 @@ const products = [
 ];
 
 const BodyOil = () => (
-  <div className="bodyoil py-8">
-    <h2 className="text-2xl font-bold mb-4 bodyoilfont">Body Oil</h2>
-    <div className='flex justify-center'>
+  <div className="bodyoil py-8 flex justify-center">
+   
+    <div className=''>
+    < h2 className="text-2xl font-bold  mb-4 bodyoilfont">Body Oil</h2>
     <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4 ">
       {/* Render the products here using the products array */}
       {products.map((product) => (
@@ -26,9 +27,9 @@ const BodyOil = () => (
           <img src="../icons/heart.svg" alt="heart" className='absolute top-4 right-3 hover:scale-125' />
         </button>   
        
-        <div className="product-info bg-yellow-200">
+        <div className="product-info ">
           <div className='border-b border-ProductInfoBorderColor'>
-          <h3 className='text-purpleNormal font-bold text-xl m-4 mt-0 bg-green-300'> {product.name} </h3>
+          <h3 className='text-purpleNormal font-bold text-xl m-4 mb-2 mt-0 '> {product.name} </h3>
           </div>
           <div className='border-b border-ProductInfoBorderColor'>
           <p className='text-lg font-bold m-4 mt-0 mb-2'>{product.price}</p>
@@ -36,12 +37,12 @@ const BodyOil = () => (
           
           <div className='flex justify-between p-4 pt-1 pb-2'>
           <div className='text-xs text-supplyInfoText'>
-          <p>Supplied by:{product.supplier}</p>
+          <p className='mb-3'>Supplied by:{product.supplier}</p>
           <div className='flex items-center'>
-          <div className="star-reviews flex justify-center w-24 ">
+          <div className="star-reviews flex w-24 ">
           {Array.from({ length: 5 }, (_, index) => (
               
-                   <FaStar
+               <FaStar
                   key={index}
                   color={index < product.starReviews ? '#FFB44C' : '#D9D9D9'}
                 /> 
@@ -51,11 +52,9 @@ const BodyOil = () => (
             <p>{product.starReviews} reviews</p>
           </div>
           </div>
-          <button id='cart-btn' className="w-9 h-9 mr-3 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"><img src="../icons/shopping_cart.svg" alt="" /></button>
+          <button id='cart-btn' className="w-9 h-9 mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"><img src="../icons/shopping_cart.svg" alt=" shopping cart" /></button>
           </div>
         </div>
-          
-         
         </div>
       ))}
     </div>

@@ -6,6 +6,7 @@ import HeroCarousel from '../components/HeroCarousel';
 import BodyOil from '../components/BodyOil';
 import NewIn from '../components/NewIn';
 import ClientTestimonials from '../components/ClientTestimonials';
+import SkinTypeBanner from '../components/SkinTypeBanner';
 
 const LandingPage = () => (
   <div>
@@ -44,6 +45,7 @@ const LandingPage = () => (
     
     <BodyOil />
     <NewIn />
+    <SkinTypeBanner />
     <ClientTestimonials />
     <div className="pre-footer">Pre-footer Content</div>
     <footer className="bg-black-dark text-white p-4">
