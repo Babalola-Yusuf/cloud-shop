@@ -6,6 +6,13 @@ export default {
       colors: {
         
           purpleNormal: '#720439',
+          cartBtnColor: '#9B9CA1',
+          cartBtnColorHover: '#720439',
+          cartBtnColorActive: '#720439',
+          supplyInfoText: '#88898F',
+          ProductCardBorderColor: '#EDEDED',
+          productInfoBorderColor:'#D1D1D4',
+  
         black: {
           light: '#e9e9e9',
           lightHover: '#dddddd',

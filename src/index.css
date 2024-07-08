@@ -29,3 +29,14 @@ body {
         font-weight: 400;
         font-style: normal;
 }
+.bodyoil{
+    
+}
+.product-card{
+    width: 297px;
+    height: 540px;
+}
+.product-image{
+    width: 300px;
+    height: 384px;
+}

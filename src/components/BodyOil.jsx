@@ -1,29 +1,64 @@
 // src/components/BodyOil.jsx
 import React from 'react';
+ import { FaStar } from 'react-icons/fa'; 
 
 const products = [
-  { id: 1, name: "Best Seller 1", price: "$20", image: "../product-images/product image - 1.png"  },
-  { id: 2, name: "Best Seller 2", price: "$30", image: "../product-images/product image - 2.png" },
-  { id: 3, name: "Best Seller 3", price: "$40", image: "../product-images/product image - 3.png" },
-  { id: 4, name: "Best Seller 4", price: "$50", image: "../product-images/product image - 4.png" },
-  { id: 5, name: "Best Seller 5", price: "$60", image: "../product-images/product image - 5.png" },
-  { id: 6, name: "Best Seller 6", price: "$70", image: "../product-images/product image - 6.png" },
-  { id: 7, name: "Best Seller 7", price: "$80", image: "../product-images/product image - 7.png" },
-  { id: 8, name: "Best Seller 8", price: "$90", image: "../product-images/product image - 8.png" },
+  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 1.png", supplier: " Jenny’sGlow", starReviews: 2 },
+  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 2.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 3.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 4.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 5, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 5.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 6, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 6.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 7, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 7.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 8.png", supplier: " Jenny’sGlow", starReviews: 4 },
 ];
 
 const BodyOil = () => (
-  <div className="best-sellers py-8">
+  <div className="bodyoil py-8">
     <h2 className="text-2xl font-bold mb-4 bodyoilfont">Body Oil</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+    <div className='flex justify-center'>
+    <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4 ">
       {/* Render the products here using the products array */}
       {products.map((product) => (
-        <div key={product.id} className="bg-gray-200 p-4 text-center">
-        <img src={product.image} alt={product.name} className="w-24 h-24 mb-4"/>   
-          <h3>{product.name}</h3>
-          <p>{product.price}</p>
+        <div key={product.id} className="product-card p-0 text-left relative border border-ProductCardBorderColor">
+        <img src={product.image} alt={product.name} className=" product-image "/>
+        <button>
+          <img src="../icons/heart.svg" alt="heart" className='absolute top-4 right-3 hover:scale-125' />
+        </button>   
+       
+        <div className="product-info bg-yellow-200">
+          <div className='border-b border-ProductInfoBorderColor'>
+          <h3 className='text-purpleNormal font-bold text-xl m-4 mt-0 bg-green-300'> {product.name} </h3>
+          </div>
+          <div className='border-b border-ProductInfoBorderColor'>
+          <p className='text-lg font-bold m-4 mt-0 mb-2'>{product.price}</p>
+          </div>
+          
+          <div className='flex justify-between p-4 pt-1 pb-2'>
+          <div className='text-xs text-supplyInfoText'>
+          <p>Supplied by:{product.supplier}</p>
+          <div className='flex items-center'>
+          <div className="star-reviews flex justify-center w-24 ">
+          {Array.from({ length: 5 }, (_, index) => (
+              
+                   <FaStar
+                  key={index}
+                  color={index < product.starReviews ? '#FFB44C' : '#D9D9D9'}
+                /> 
+                
+              ))}
+            </div>
+            <p>{product.starReviews} reviews</p>
+          </div>
+          </div>
+          <button id='cart-btn' className="w-9 h-9 mr-3 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"><img src="../icons/shopping_cart.svg" alt="" /></button>
+          </div>
+        </div>
+          
+         
         </div>
       ))}
+    </div>
     </div>
   </div>
 );
