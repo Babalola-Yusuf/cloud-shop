@@ -4,11 +4,14 @@ import React from 'react';
 const SkinTypeBanner = () => {
 
   return (
-    <div className="skin-type-banner w-full overflow-hidden bg-green-200">
-        <div>
-            <h2>NEW Virtual Skincare Consultation</h2>
-            <p>Looking for a full skincare Consultant? Our NEW Virtual Skincare Consultant Tool evaluates your skin and provides the most personalized recommendations. </p>
-        </div>
+    <div className="skin-type-banner w-full relative ">
+      <img src="/images/cosmetic-male-beauty-products-with-display 1.png" alt=""  className=" object-cover absolute"/>
+      <div className='overlay  absolute w-full  '>
+      <div className='text-container opacity-100 '>
+        <h2 className="text-white font-bold">Preserve Your Glow, Embrace Your Hue</h2>
+      </div>
+      </div>
+        
     </div>
   );
 };
