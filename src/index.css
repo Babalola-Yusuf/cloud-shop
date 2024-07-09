@@ -45,9 +45,6 @@ body {
 }
 
 .skin-type-banner .text-container{
-    width: 591px;
-    height: 715px;
-    font-size: 96px;
     margin-left: 75px;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -59,7 +56,6 @@ body {
 }
 footer{
     width: 100%;
-    height: ;
     background: #3D021E;
     margin-top: 186px;
 }
@@ -72,19 +68,42 @@ footer{
     padding-right: 108px;
     font-size: 16px;
 }
+@media screen and (max-width: 768px) {
+    .pre-footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 .footer-links{
     padding-left: 108px;
     padding-right: 108px;
 }
+@media screen and (max-width: 768px) {
+    .footer-links{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 .address-and-social-icons{
     background-color: #280114;
-    height: 69px;
     padding-left: 108px;
     padding-right: 108px;
+}
+@media screen and (max-width: 768px) {
+    .address-and-social-icons{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
 }
 .right-section{
     width: 600px;
     height: 271px;
+}
+@media screen and (max-width: 768px) {
+    .right-section{
+        width: 400px;
+    }
 }
 .right-section .email{
 width: 480px;
@@ -93,6 +112,11 @@ background: none;
 border-bottom: #CBCBCB 1px solid;
 color: #CBCBCB;
 }
+@media screen and (max-width: 768px) {
+    .right-section .email{
+        width: 360px;
+    }
+}
 .subscribe-btn{
     width: 104px;
     height: 48px;
@@ -100,5 +124,12 @@ color: #CBCBCB;
 }
 .copyright-and-privacy-section{
     background-color: #14010A;
-    height: 56px;
+    padding-left: 108px;
+    padding-right: 108px;
+}
+@media screen and (max-width: 768px) {
+    .copyright-and-privacy-section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
