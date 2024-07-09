@@ -3,14 +3,14 @@ import React, { useContext } from 'react';
 import { FaStar } from 'react-icons/fa'; 
 import { CartContext } from '../contexts/CartContext';
 const products = [
-  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 1.png", supplier: " Jenny’sGlow", starReviews: 2, category: "Body Oil", unitsLeft: 10 },
-  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 2.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Body Oil", unitsLeft: 4 },
-  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 3.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Body Oil", unitsLeft: 5 },
-  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 4.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Body Oil", unitsLeft: 3 },
-  { id: 5, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 5.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Body Oil", unitsLeft: "" },
-  { id: 6, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 6.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Body Oil", unitsLeft: "" },
-  { id: 7, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 7.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Body Oil", unitsLeft: 6 },
-  { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 8.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Body Oil", unitsLeft: 8 },
+  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 1.png", supplier: " Jenny’sGlow", starReviews: 2, category: "Natural", unitsLeft: 10 },
+  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 2.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 4 },
+  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 3.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 5 },
+  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 4.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 3 },
+  { id: 5, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 5.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: "" },
+  { id: 6, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 6.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: "" },
+  { id: 7, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 7.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 6 },
+  { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 8.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 8 },
 ];
 
 const ProductCard = ({ product }) => {

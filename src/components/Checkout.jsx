@@ -2,6 +2,8 @@
 import React, { useState, useContext } from 'react';
 import { CartContext } from '../contexts/CartContext';
 import PaymentSuccessModal from './PaymentSuccessModal';
+import Header from './Header';
+import Footer from './Footer';
 
 const Checkout = () => {
   const { cart } = useContext(CartContext);
@@ -15,7 +17,9 @@ const Checkout = () => {
   };
 
   return (
-    <div className="checkout py-8">
+    <div>
+      <Header />
+        <div className="checkout py-8 px-4">
       <h2 className="text-2xl font-bold mb-4">Checkout</h2>
 
       <div className="mb-8">
@@ -88,14 +92,17 @@ const Checkout = () => {
             <p className="font-bold">Total Cost: {totalCost}</p>
             <p className="font-bold">Delivery Fee: N 1,000</p>
             <p className="font-bold">Total Amount: {totalCost + 1000}</p>
-            <button onClick={handlePayment} className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Pay Now</button>
+            <button onClick={handlePayment} className="mt-4 bg-purpleNormal text-white px-4 py-2 rounded">Pay Now</button>
           </div>
         </div>
       </div>
 
       {showModal && <PaymentSuccessModal onClose={() => setShowModal(false)} />}
     </div>
-  );
+
+    <Footer />
+    </div>
+      );
 };
 
 export default Checkout;
