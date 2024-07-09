@@ -1,20 +1,21 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
-import ProductPage from './pages/ProductPage';
-import ProductDescriptionPage from './pages/ProductDescriptionPage';
-import CartPage from './pages/CartPage';
-import CheckoutPage from './pages/CheckoutPage';
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
+import { CartProvider } from './contexts/CartContext';
 
 const App = () => (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/products" element={<ProductPage />} />
-      <Route path="/products/:id" element={<ProductDescriptionPage />} />
-      <Route path="/cart" element={<CartPage />} />
-      <Route path="/checkout" element={<CheckoutPage />} />
-    </Routes>
+  <CartProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
+    </Router>
+  </CartProvider>
 );
 
 export default App;

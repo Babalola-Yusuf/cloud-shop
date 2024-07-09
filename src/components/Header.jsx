@@ -1,10 +1,12 @@
 // src/components/Header.jsx
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
+import { CartContext } from '../contexts/CartContext';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { cart } = useContext(CartContext);
 
   return (
     <header className="bg-white text-black-normal font-bold p-4 flex justify-between items-center">
@@ -19,9 +21,7 @@ const Header = () => {
         <FaBars size={24} />
       </button>
 
-      <nav className={`${
-        isOpen ? 'block' : 'hidden'
-      } w-full lg:flex lg:w-auto lg:space-x-4 lg:items-center`}>
+      <nav className={`${isOpen ? 'block' : 'hidden'} w-full lg:flex lg:w-auto lg:space-x-4 lg:items-center`}>
         <ul className="flex flex-col lg:flex-row lg:space-x-4">
           <li><Link to="/">Women Skincare</Link></li>
           <li><Link to="/">Men Skincare</Link></li>
@@ -39,7 +39,14 @@ const Header = () => {
           <Link to="/profile"><p>DesignKid</p></Link>
           <Link to="/profile"><img src="icons/arrow_left.svg" alt="arrow left" /></Link>
         </li>
-        <li><Link to="/cart"><img src="icons/shopping_cart.svg" alt="shopping cart" /></Link></li>
+        <li className="relative">
+          <Link to="/cart">
+            <img src="icons/shopping_cart.svg" alt="shopping cart" />
+            {cart.length > 0 && (
+              <span className="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">{cart.length}</span>
+            )}
+          </Link>
+        </li>
         <li className="flex space-x-1 items-center">
           <Link to="/language"><img src="icons/language.svg" alt="language" /></Link>
           <Link to="/language"><p>NGN (EN)</p></Link>
