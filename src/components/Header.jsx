@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="bg-white text-black-normal font-bold p-4 flex justify-between items-center">
       <div className="logo">
-        <Link to="/"><img src="../images/logo.png" alt="logo" /></Link>
+        <Link to="/"><img src="images/logo.png" alt="logo" /></Link>
       </div>
 
       <button 
@@ -32,16 +32,16 @@ const Header = () => {
       </nav>
 
       <ul className="flex space-x-4 items-center">
-        <li><Link to="/search"><img src="../icons/search.svg" alt="search" /></Link></li>
-        <li><img src="../icons/Line 1.svg" alt="line separator" /></li>
+        <li><Link to="/search"><img src="icons/search.svg" alt="search" /></Link></li>
+        <li><img src="icons/Line 1.svg" alt="line separator" /></li>
         <li className="flex space-x-1 items-center">
-          <Link to="/login"><img src="../icons/Ellipse 17.svg" alt="user" /></Link>
+          <Link to="/login"><img src="icons/Ellipse 17.svg" alt="user" /></Link>
           <Link to="/profile"><p>DesignKid</p></Link>
-          <Link to="/profile"><img src="../icons/arrow_left.svg" alt="arrow left" /></Link>
+          <Link to="/profile"><img src="icons/arrow_left.svg" alt="arrow left" /></Link>
         </li>
-        <li><Link to="/cart"><img src="../icons/shopping_cart.svg" alt="shopping cart" /></Link></li>
+        <li><Link to="/cart"><img src="icons/shopping_cart.svg" alt="shopping cart" /></Link></li>
         <li className="flex space-x-1 items-center">
-          <Link to="/language"><img src="../icons/language.svg" alt="language" /></Link>
+          <Link to="/language"><img src="icons/language.svg" alt="language" /></Link>
           <Link to="/language"><p>NGN (EN)</p></Link>
         </li>
       </ul>

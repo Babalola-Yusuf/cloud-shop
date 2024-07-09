@@ -3,10 +3,14 @@ import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa'; 
 
 const products = [
-  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 1.png", supplier: " Jenny’sGlow", starReviews: 2 },
-  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 2.png", supplier: " Jenny’sGlow", starReviews: 4 },
-  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 3.png", supplier: " Jenny’sGlow", starReviews: 4 },
-  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "../product-images/product image - 4.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 1.png", supplier: " Jenny’sGlow", starReviews: 2 },
+  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 2.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 3.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 4.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 5, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 5.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 6, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 6.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 7, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 7.png", supplier: " Jenny’sGlow", starReviews: 4 },
+  { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 8.png", supplier: " Jenny’sGlow", starReviews: 4 },
 ];
 
 const NewIn = () => {
@@ -21,7 +25,7 @@ const NewIn = () => {
         <div key={product.id} className="product-card p-0 text-left relative border border-ProductCardBorderColor">
         <img src={product.image} alt={product.name} className=" product-image "/>
         <button>
-          <img src="../icons/heart.svg" alt="heart" className='absolute top-4 right-3 hover:scale-125' />
+          <img src="icons/heart.svg" alt="heart" className='absolute top-4 right-3 hover:scale-125' />
         </button>   
        
         <div className="product-info ">
@@ -49,7 +53,7 @@ const NewIn = () => {
             <p>{product.starReviews} reviews</p>
           </div>
           </div>
-          <button id='cart-btn' className="w-9 h-9 mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"><img src="../icons/shopping_cart.svg" alt=" shopping cart" /></button>
+          <button id='cart-btn' className="w-9 h-9 mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"><img src="icons/shopping_cart.svg" alt=" shopping cart" /></button>
           </div>
         </div>
         </div>

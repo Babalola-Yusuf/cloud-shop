@@ -6,19 +6,19 @@ const Footer = () => (
     <footer className=" text-white">
     <div className="pre-footer flex justify-between items-center ">
       <div className="flex gap-4 items-center">
-        <img src="../icons/bunny vector.svg" alt="" />
+        <img src="icons/bunny vector.svg" alt="" />
         <p>No tests on animals</p>
       </div>
       <div className="flex gap-4 items-center">
-        <img src="../icons/Vector.svg" alt="" />
+        <img src="icons/Vector.svg" alt="" />
         <p>Only licensed products</p>
       </div>
       <div className="flex gap-4 items-center">
-        <img src="../icons/Wheat.svg" alt="" />
+        <img src="icons/Wheat.svg" alt="" />
         <p>100% natural</p>
       </div>
       < div className="flex gap-4 items-center">
-        <img src="../icons/Vector (1).svg" alt="" />
+        <img src="icons/Vector (1).svg" alt="" />
         <p>100% organic</p>
       </div>
     </div>
@@ -65,29 +65,29 @@ const Footer = () => (
       <div className='address-and-phone flex flex-col md:flex-row gap-2'>
         <div className="address flex ">
           <div className="location flex gap-2">
-            <img src="../icons/location-icon.svg" alt="" className='w-6 h-6'/>
+            <img src="icons/location-icon.svg" alt="" className='w-6 h-6'/>
             <p>123 Wellington Bassey Way</p>
           </div>
           
-          <img src="../icons/indicator.svg" alt="" className='w-6 h-6' />
+          <img src="icons/indicator.svg" alt="" className='w-6 h-6' />
         </div>
         <div className="phone flex gap-2">
-          <img src="../icons/phone-icon.svg" alt="" className='w-6 h-6' />
+          <img src="icons/phone-icon.svg" alt="" className='w-6 h-6' />
           <p>234-904-500-4705</p>
         </div>  
       </div>
 
       <div className="social-icons flex gap-2">
-        <a href="#"> <img src="../icons/_Instagram.svg" alt="" className='w-6 h-6'/></a>
-        <a href="#"> <img src="../icons/facebook-icon.svg" alt="" className='w-6 h-6'/></a>
-        <a href="#"> <img src="../icons/_Twitter.svg" alt="" className='w-6 h-6'/></a>
-        <a href="#"> <img src="../icons/_TikTok.svg" alt="" className='w-6 h-6'/></a>   
+        <a href="#"> <img src="icons/_Instagram.svg" alt="" className='w-6 h-6'/></a>
+        <a href="#"> <img src="icons/facebook-icon.svg" alt="" className='w-6 h-6'/></a>
+        <a href="#"> <img src="icons/_Twitter.svg" alt="" className='w-6 h-6'/></a>
+        <a href="#"> <img src="icons/_TikTok.svg" alt="" className='w-6 h-6'/></a>   
       </div>
       
     </div>
     <div className='copyright-and-privacy-section flex flex-col gap-2 md:flex-row justify-between p-5'>
       <div className="copyright flex gap-2">
-        <img src="../icons/copyright.svg" alt="" className='w-6 h-6'/> <p>2024 Skinluxe. All Rights Reserved.</p>
+        <img src="icons/copyright.svg" alt="" className='w-6 h-6'/> <p>2024 Skinluxe. All Rights Reserved.</p>
       </div>
       <div className="terms-and-privacy flex">
         <p>Terms & Conditions</p>

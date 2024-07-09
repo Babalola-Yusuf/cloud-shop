@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import HeroCarousel from '../components/HeroCarousel';
 import BodyOil from '../components/BodyOil';
 import NewIn from '../components/NewIn';
-import ClientTestimonials from '../components/ClientTestimonials';
+/* import ClientTestimonials from '../components/ClientTestimonials'; */
 import SkinTypeBanner from '../components/SkinTypeBanner';
 import Moisturizer from '../components/Moisturizer';
 import FaceOil from '../components/FaceOil';
