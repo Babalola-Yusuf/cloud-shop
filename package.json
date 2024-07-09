@@ -2,7 +2,7 @@
   "name": "cloud-shop",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://babalola-yusuf.github.io/cloud-shop1/",
+  "homepage": "https://babalola-yusuf.github.io/cloud-shop/",
   "type": "module",
   "scripts": {
     "dev": "vite",

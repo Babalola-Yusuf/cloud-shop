@@ -8,7 +8,6 @@ import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 
 const App = () => (
-  <Router>
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/products" element={<ProductPage />} />
@@ -16,7 +15,6 @@ const App = () => (
       <Route path="/cart" element={<CartPage />} />
       <Route path="/checkout" element={<CheckoutPage />} />
     </Routes>
-  </Router>
 );
 
 export default App;
