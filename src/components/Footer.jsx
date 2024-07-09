@@ -7,19 +7,19 @@ const Footer = () => (
     <div className="pre-footer flex justify-between items-center ">
       <div className="flex gap-4 items-center">
         <img src="icons/bunny vector.svg" alt="" />
-        <p>No tests on animals</p>
+        <p className='hidden md:flex'>No tests on animals</p>
       </div>
       <div className="flex gap-4 items-center">
         <img src="icons/Vector.svg" alt="" />
-        <p>Only licensed products</p>
+        <p className='hidden md:flex'>Only licensed products</p>
       </div>
       <div className="flex gap-4 items-center">
         <img src="icons/Wheat.svg" alt="" />
-        <p>100% natural</p>
+        <p className='hidden md:flex'>100% natural</p>
       </div>
       < div className="flex gap-4 items-center">
         <img src="icons/Vector (1).svg" alt="" />
-        <p>100% organic</p>
+        <p className='hidden md:flex'>100% organic</p>
       </div>
     </div>
       
@@ -49,7 +49,7 @@ const Footer = () => (
         <h2 className="text-white font-bold text-2xl">About Us</h2>
         <p>Join the Skinluxe newsletter and be first to hear about news, offers and skincare advice</p>
         <form action="">
-          <div className='flex items-center gap-4' >
+          <div className='flex flex-col md:flex-row items-center gap-4' >
             <input type="text" placeholder="Email Address" id='email' className="email" />
             <button className="subscribe-btn hover:border-2 hover:border-gold-dark hover:text-white">Subscribe</button>
           </div>

@@ -51,6 +51,11 @@ body {
     font-style: normal;
     text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+    .skin-type-banner .text-container{
+        margin-left: 10px;
+    }
+}
 .overlay{
     background: rgba(68, 2, 34, 0.57);
 }

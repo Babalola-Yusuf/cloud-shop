@@ -43,7 +43,10 @@ const Header = () => {
           <Link to="/cart">
             <img src="icons/shopping_cart.svg" alt="shopping cart" />
             {cart.length > 0 && (
-              <span className="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">{cart.length}</span>
+              <span className="absolute top-0 right-0 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center">
+                <img src="icons/shopping_cart.svg" alt="" />
+                {cart.length}
+                </span>
             )}
           </Link>
         </li>
