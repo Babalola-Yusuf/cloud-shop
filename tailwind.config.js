@@ -38,6 +38,7 @@ export default {
           darker: '#593f1b',
         },
       },
+      
     },
   },
   plugins: [],
