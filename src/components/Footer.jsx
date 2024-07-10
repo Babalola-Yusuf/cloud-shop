@@ -49,7 +49,7 @@ const Footer = () => (
         <h2 className="text-white font-bold text-2xl">About Us</h2>
         <p>Join the Skinluxe newsletter and be first to hear about news, offers and skincare advice</p>
         <form action="">
-          <div className='flex flex-col md:flex-row items-center gap-4' >
+          <div className='flex flex-col sm:flex-row items-center gap-4 ' >
             <input type="text" placeholder="Email Address" id='email' className="email" />
             <button className="subscribe-btn hover:border-2 hover:border-gold-dark hover:text-white">Subscribe</button>
           </div>
