@@ -36,9 +36,29 @@ body {
     width: 297px;
     height: 540px;
 }
+@media screen and (max-width: 480px) {
+    .product-card{
+        width: 151px;
+        height: 285px;
+    }
+}
 .product-image{
     width: 300px;
     height: 384px;
+}
+@media screen and (max-width: 480px) {
+    .product-image{
+        width: 151px;
+        height: 181px;
+    }
+}
+.reviews-text{
+    font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+    .reviews-text{
+        font-size: 6px;
+    }
 }
 .skin-type-banner{
  height: 732px;
