@@ -1,8 +1,9 @@
 // src/components/Header.jsx
 import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+/* import { Link } from 'react-router-dom'; */
 import { FaBars } from 'react-icons/fa';
 import { CartContext } from '../contexts/CartContext';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +24,12 @@ const Header = () => {
 
       <nav className={`${isOpen ? 'block' : 'hidden'} w-full lg:flex lg:w-auto lg:space-x-4 lg:items-center`}>
         <ul className="flex flex-col lg:flex-row lg:space-x-4">
-          <li><Link to="/">Women Skincare</Link></li>
-          <li><Link to="/">Men Skincare</Link></li>
-          <li><Link to="/">Blog</Link></li>
-          <li><Link to="/">Contact Us</Link></li>
-          <li><Link to="/">Our Brand</Link></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="#bodyoil">Body Oil</Link></li>
+          <li><Link to="#natural">Natural</Link></li>
+          <li><Link to="#moisturizer">Moisturizer</Link></li>
+          <li><Link to="#faceoil">Face Oil</Link></li>
+          <li><Link to="#nightcream">Night Cream</Link></li>
         </ul>
       </nav>
 

@@ -58,7 +58,7 @@ const ProductCard = ({ product }) => {
 };
 
 const FaceOil = () => (
-  <div className="bodyoil py-8 flex justify-center">
+  <div className="bodyoil py-8 flex justify-center" id='faceoil'>
     <div>
       <h2 className="text-2xl font-bold mb-4 bodyoilfont">Face Oil</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
