@@ -23,7 +23,7 @@ const Footer = () => (
       </div>
     </div>
       
-    <div className='footer-links xl:flex justify-between items-center'>
+    <div className='footer-links xl:flex justify-between items-center '>
 
     <div className='left-section flex flex-col gap-3 mt-20'>
         <h2 className="text-white font-bold text-2xl">How can we Help?</h2>
@@ -55,7 +55,7 @@ const Footer = () => (
           </div>
           <div className='flex items-start gap-2 py-2'>
           <input type="checkbox" />
-          <p className='m-0'>By submitting your email, you agree to receive advertising emails from Skinluxe. Please review our Privacy Policy, </p>
+          <p className='m-0 text-sm'>By submitting your email, you agree to receive advertising emails from Skinluxe. Please review our Privacy Policy, </p>
           </div>
           
         </form>    
@@ -64,7 +64,7 @@ const Footer = () => (
     <div className='address-and-social-icons flex flex-col gap-2 md:flex-row justify-between md:items-center p-5'>
       <div className='address-and-phone flex flex-col md:flex-row gap-2'>
         <div className="address flex ">
-          <div className="location flex gap-2">
+          <div className="location flex gap-2 text-sm">
             <img src="icons/location-icon.svg" alt="" className='w-6 h-6'/>
             <p>123 Wellington Bassey Way</p>
           </div>
@@ -85,11 +85,11 @@ const Footer = () => (
       </div>
       
     </div>
-    <div className='copyright-and-privacy-section flex flex-col gap-2 md:flex-row justify-between p-5'>
+    <div className='copyright-and-privacy-section flex flex-col gap-2 md:flex-row justify-between p-5 text-xs'>
       <div className="copyright flex gap-2">
         <img src="icons/copyright.svg" alt="" className='w-6 h-6'/> <p>2024 Skinluxe. All Rights Reserved.</p>
       </div>
-      <div className="terms-and-privacy flex">
+      <div className="terms-and-privacy flex gap-6 ">
         <p>Terms & Conditions</p>
         <p>Privacy Policy</p>  
       </div>

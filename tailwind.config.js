@@ -6,6 +6,8 @@ export default {
       colors: {
         
           purpleNormal: '#720439',
+          purpleHover: '#720439',
+          purpleActive: '#D3B1C2',
           cartBtnColor: '#9B9CA1',
           cartBtnColorHover: '#720439',
           cartBtnColorActive: '#720439',

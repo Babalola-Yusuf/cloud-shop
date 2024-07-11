@@ -24,16 +24,16 @@ const ProductCard = ({ product, onAddToCart }) => {
       </button>   
       <div className="product-info -mt-6">
         <div className='border-b border-ProductInfoBorderColor'>
-          <h3 className='text-purpleNormal font-bold text-xs sm:text-xl ml-2 sm:m-4 sm:mb-2 mt-0'>{product.name}</h3>
+          <h3 className='text-purpleNormal font-bold text-xs md:text-xl ml-2 md:m-4 md:mb-2 mt-0'>{product.name}</h3>
         </div>
         <div className='border-b border-ProductInfoBorderColor'>
-          <p className='text-sm sm:text-lg font-bold ml-2 sm:m-4 mt-0 sm:mb-2'>{product.price}</p>
+          <p className='text-sm smd:text-lg font-bold ml-2 md:m-4 mt-0 md:mb-2'>{product.price}</p>
         </div>
         <div className='flex justify-between items-center  p-4 pt-1 pb-2 '>
           <div className='text-xs text-supplyInfoText '>
-            <p className=' hidden sm:block mb-3'>Supplied by: {product.supplier}</p>
+            <p className=' hidden md:block mb-3'>Supplied by: {product.supplier}</p>
             <div className='flex items-center '>
-              <div className="star-reviews flex w-12 sm:w-24">
+              <div className="star-reviews flex w-12 md:w-24">
                 {Array.from({ length: 5 }, (_, index) => (
                   <FaStar
                     key={index}
@@ -46,7 +46,7 @@ const ProductCard = ({ product, onAddToCart }) => {
           </div>
           <button
             id='cart-btn'
-            className="w-9 h-9 sm:mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"
+            className="w-9 h-9 md:mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"
             onClick={() => onAddToCart(product)}
           >
             <img src="icons/shopping_cart.svg" alt="shopping cart"/>
@@ -71,7 +71,7 @@ const BodyOil = () => {
   <div className="bodyoil py-5 sm:py-8 flex justify-center" id='bodyoil'>
     <div>
       <h2 className="text-2xl font-bold mb-4 bodyoilfont">Body Oil</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {products.map(product => <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />)}
       </div>
     </div>

@@ -7,7 +7,7 @@ const Notification = ({ message, onClose }) => (
     <div className="fixed flex gap-1.5 items-center top-4 right-4 bg-white  p-4 rounded shadow-lg"> 
       
       <img src="icons/check.svg " alt="check" className='bg-green-500 p-1 rounded-full'/>
-      <p>{message}</p>
+      <p className='text-sm'>{message}</p>
       {/* <button onClick={onClose} className="mt-2 text-sm underline">
         Close
       </button> */}

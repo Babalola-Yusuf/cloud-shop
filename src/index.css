@@ -36,7 +36,7 @@ body {
     width: 297px;
     height: 540px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .product-card{
         width: 151px;
         height: 285px;
@@ -46,7 +46,7 @@ body {
     width: 300px;
     height: 384px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .product-image{
         width: 151px;
         height: 181px;
@@ -55,7 +55,7 @@ body {
 .reviews-text{
     font-size: 12px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .reviews-text{
         font-size: 6px;
     }
@@ -104,8 +104,8 @@ footer{
 }
 @media screen and (max-width: 768px) {
     .footer-links{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 .address-and-social-icons{
@@ -115,8 +115,8 @@ footer{
 }
 @media screen and (max-width: 768px) {
     .address-and-social-icons{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
 }
@@ -145,6 +145,12 @@ color: #CBCBCB;
     height: 48px;
     border: #FFFFFF 2px solid;
 }
+@media screen and (max-width: 768px) {
+    .subscribe-btn{
+        width: 320px;
+        margin-left: 20px;
+    }
+}
 .copyright-and-privacy-section{
     background-color: #14010A;
     padding-left: 108px;
@@ -152,8 +158,8 @@ color: #CBCBCB;
 }
 @media screen and (max-width: 768px) {
     .copyright-and-privacy-section{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
