@@ -1,7 +1,8 @@
 // src/components/NewIn.jsx
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaStar } from 'react-icons/fa'; 
 import { CartContext } from '../contexts/CartContext';
+import Notification from './Notification';
 const products = [
   { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 1.png", supplier: " Jenny’sGlow", starReviews: 2, category: "Moisturizer", unitsLeft: 10 },
   { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 2.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 4 },
@@ -13,9 +14,8 @@ const products = [
   { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 8.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 8 },
 ];
 
-const ProductCard = ({ product }) => {
-  const { addToCart } = useContext(CartContext);
-
+const ProductCard = ({ product, onAddToCart }) => {
+  
   return (
     <div className="product-card p-0 text-left relative border border-ProductCardBorderColor">
       <img src={product.image} alt={product.name} className="product-image" />
@@ -47,7 +47,7 @@ const ProductCard = ({ product }) => {
           <button
             id='cart-btn'
             className="w-9 h-9 sm:mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"
-            onClick={() => addToCart(product)}
+            onClick={() => onAddToCart(product)}
           >
             <img src="icons/shopping_cart.svg" alt="shopping cart"/>
           </button>
@@ -57,15 +57,29 @@ const ProductCard = ({ product }) => {
   );
 };
 
-const Moisturizer = () => (
+const Moisturizer = () => {
+
+  const { addToCart } = useContext(CartContext);
+  const [notification, setNotification] = useState('');
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    setNotification(`${product.name} has been added to the cart`);
+    setTimeout(() => setNotification(''), 3000); // Hide notification after 3 seconds
+  };
+  return(
   <div className="bodyoil py-5 sm:py-8 flex justify-center" id='moisturizer'>
     <div>
       <h2 className="text-2xl font-bold mb-4 bodyoilfont">Moisturizer</h2>
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {products.map(product => <ProductCard key={product.id} product={product} />)}
+        {products.map(product => <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />)}
       </div>
     </div>
+    {notification && (
+        <Notification message={notification} />
+      )}
   </div>
 );
+};
 
 export default Moisturizer;

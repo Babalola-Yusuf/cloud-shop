@@ -10,7 +10,7 @@ const Header = () => {
   const { cart } = useContext(CartContext);
 
   return (
-    <header className="bg-white text-black-normal font-bold p-4 flex justify-between items-center">
+    <header className="bg-white text-black-normal font-bold p-4 flex justify-between items-center ">
       <div className="logo">
         <Link to="/"><img src="images/logo.png" alt="logo" /></Link>
       </div>
