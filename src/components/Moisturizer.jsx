@@ -4,14 +4,14 @@ import { FaStar } from 'react-icons/fa';
 import { CartContext } from '../contexts/CartContext';
 import Notification from './Notification';
 const products = [
-  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 1.png", supplier: " Jenny’sGlow", starReviews: 2, category: "Moisturizer", unitsLeft: 10 },
-  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 2.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 4 },
-  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 3.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 5 },
-  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 4.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 3 },
-  { id: 5, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 5.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: "" },
-  { id: 6, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 6.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: "" },
-  { id: 7, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 7.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 6 },
-  { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 8.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 8 },
+  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 17.png", supplier: " Jenny’sGlow", starReviews: 2, category: "Moisturizer", unitsLeft: 1 },
+  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 18.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 4 },
+  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 19.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 5 },
+  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 20.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 3 },
+  { id: 5, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 21.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: "" },
+  { id: 6, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 22.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: "" },
+  { id: 7, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 23.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 6 },
+  { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 24.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Moisturizer", unitsLeft: 8 },
 ];
 
 const ProductCard = ({ product, onAddToCart }) => {

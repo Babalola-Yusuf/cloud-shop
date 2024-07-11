@@ -17,9 +17,9 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white text-black-normal p-4 flex flex-col gap-5 justify-items-start">
-      <div className=" flex justify-between items-center">
-          <div className="flex flex-row-reverse lg:flex-row justify-between items-center gap-x-24">
+    <header className=" text-black-normal p-4 flex flex-col gap-5 justify-items-start ">
+      <div className=" flex justify-between  ">
+          <div className="flex flex-row-reverse lg:flex-row justify-between items-center gap-x-24 ">
           <div className="logo">
             <Link to="/"><img src="images/logo.png" alt="logo" /></Link>
           </div>
@@ -32,15 +32,14 @@ const Header = () => {
           </button>
           </div>
           
-
-          <nav className={`fixed z-50 top-0 right-0 w-64 h-full bg-white shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out lg:relative lg:transform-none lg:translate-x-0 lg:shadow-none lg:bg-transparent lg:flex lg:w-auto lg:space-x-4 lg:items-center`}>
+          <nav className={`fixed flex flex-col bg-white z-50 top-0 right-0 w-64 h-full  shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out lg:relative lg:transform-none lg:translate-x-0 lg:shadow-none lg:bg-transparent lg:flex lg:w-auto lg:space-x-4 lg:items-center`}>
             <button
               className="absolute top-4 right-4 p-2 rounded focus:outline-none lg:hidden"
               onClick={toggleSidebar}
             >
               <FaTimes size={24} />
             </button>
-            <ul className="flex flex-col gap-8 items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 text-purpleActive p-4 lg:p-0 mt-20 ">
+            <ul className="flex flex-col gap-8 items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 text-purpleActive p-4 lg:p-0 mt-20 lg:mt-5  ">
               <li><Link to="/" className={`${isActive('/') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Home</Link></li>
               <li><Link to="#bodyoil" className={`${isActive('#bodyoil') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Body Oil</Link></li>
               <li><Link to="#natural" className={`${isActive('#natural') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Natural</Link></li>
