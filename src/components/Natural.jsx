@@ -4,14 +4,14 @@ import { FaStar } from 'react-icons/fa';
 import { CartContext } from '../contexts/CartContext';
 import Notification from './Notification';
 const products = [
-  { id: 1, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 9.png", supplier: " Jenny’sGlow", starReviews: 2, category: "Natural", unitsLeft: 10 },
-  { id: 2, name: " Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 10.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 4 },
-  { id: 3, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 11.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 5 },
-  { id: 4, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 12.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 3 },
-  { id: 5, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 13.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: "" },
-  { id: 6, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 14.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: "" },
-  { id: 7, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 15.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 6 },
-  { id: 8, name: "Skinluxe Glow Cream XG", price: "N 76,000", image: "product-images/product image - 16.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 8 },
+  { id: 1, name: "Saint Leave Preservoiur ", price: "N 16,000", image: "product-images/product image - 9.png", supplier: " Jenny’sGlow", starReviews: 2, category: "Natural", unitsLeft: 10 },
+  { id: 2, name: " Coculeave Concotion", price: "N 76,000", image: "product-images/product image - 10.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 4 },
+  { id: 3, name: "Tiffa Leave Es tracts", price: "N 76,000", image: "product-images/product image - 11.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 5 },
+  { id: 4, name: "Red Blissasue Oil ", price: "N 76,000", image: "product-images/product image - 12.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 3 },
+  { id: 5, name: "Coconut Melt  ", price: "N 78,000", image: "product-images/product image - 13.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: "" },
+  { id: 6, name: "Palleave Selucted Cream", price: "N 450,000", image: "product-images/product image - 14.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: "" },
+  { id: 7, name: "Indexed Meltin", price: "N 51,000", image: "product-images/product image - 15.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 6 },
+  { id: 8, name: "Isuned Serti", price: "N 76,410", image: "product-images/product image - 16.png", supplier: " Jenny’sGlow", starReviews: 4, category: "Natural", unitsLeft: 8 },
 ];
 const ProductCard = ({ product, onAddToCart }) => {
   

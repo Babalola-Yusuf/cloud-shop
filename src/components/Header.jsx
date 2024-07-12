@@ -57,7 +57,7 @@ const Header = () => {
               <Link to="/profile"><p>DesignKid</p></Link>
               <Link to="/profile"><img src="icons/arrow_left.svg" alt="arrow left" /></Link>
             </li> */}
-            <li className="relative">
+            <li className="relative hover:scale-150 ease-in duration-300">
               <Link to="/cart">
                 <img src="icons/shopping_cart.svg" alt="shopping cart" />
                 {cart.length > 0 && (
