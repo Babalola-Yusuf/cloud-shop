@@ -24,7 +24,7 @@ const ProductCard = ({ product, onAddToCart }) => {
       </button>   
       <div className="product-info -mt-6">
         <div className='border-b border-ProductInfoBorderColor'>
-          <h3 className='text-purpleNormal font-bold text-xs md:text-xl ml-2 md:m-4 md:mb-2 mt-0'>{product.name}</h3>
+          <h3 className='text-purpleNormal font-bold text-10px md:text-xl ml-2 md:m-4 md:mb-2 mt-0'>{product.name}</h3>
         </div>
         <div className='border-b border-ProductInfoBorderColor'>
           <p className='text-sm smd:text-lg font-bold ml-2 md:m-4 mt-0 md:mb-2'>{product.price}</p>
@@ -71,7 +71,7 @@ const BodyOil = () => {
   <div className="bodyoil py-5 sm:py-8 flex justify-center" id='bodyoil'>
     <div>
       <h2 className="text-2xl font-bold mb-4 bodyoilfont">Body Oil</h2>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 screen-x:gap-16 md:gap-5">
         {products.map(product => <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />)}
       </div>
     </div>

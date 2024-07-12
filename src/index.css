@@ -34,8 +34,21 @@ body {
     transform: scale(1.02);
     transition: 0.5s;
     cursor: pointer;
-
+    border: 1px solid #79043C;
 }
+.product-card:hover #cart-btn{
+    background-color: #720439;
+    color: #79043C;
+}
+#cart-btn{
+    background-color: #D3B1C2;
+    color: #FBEFF2;
+}
+
+.product-card:hover .product-image{
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 768px) {
     .product-card{
         width: 151px;
@@ -63,6 +76,11 @@ body {
 .skin-type-banner{
  height: 732px;
 }
+@media screen and (max-width: 768px) {
+    .skin-type-banner{
+        height: 221px;
+    }
+}
 
 .skin-type-banner .text-container{
     margin-left: 75px;
@@ -70,14 +88,27 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     text-transform: uppercase;
+    max-width: 591px;
 }
 @media screen and (max-width: 768px) {
     .skin-type-banner .text-container{
-        margin-left: 10px;
+        margin-top: 23px;
+        margin-left: 63px;
+        width: 118px;
     }
 }
 .overlay{
     background: rgba(68, 2, 34, 0.57);
+}
+
+.skin-type-text{
+    line-height: 143.04px;
+}
+@media screen and (max-width: 768px) {
+    .skin-type-text{
+        line-height: 35.2px;;
+        font-size: 20px;
+    }
 }
 footer{
     width: 100%;

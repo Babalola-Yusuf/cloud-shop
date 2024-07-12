@@ -3,6 +3,12 @@ export default {
   content: [ './index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+         'screen-x': '450px',
+      },
+      fontSize: {
+        '10px': '10px',
+      },
       colors: {
         
           purpleNormal: '#720439',
