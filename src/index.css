@@ -194,21 +194,6 @@ color: #CBCBCB;
     }
 }
 
-.card-cart-summary{
-    width: 322px;
-    height: 277px;
-}
-
-@media screen and (max-width: 768px) {
-    .card-cart-summary{
-        width: 80px;
-        height: 86px;
-    }
-}
-
-.cart-item{
-    
-}
 .hide-for-desktop{
  visibility:hidden;   
 }
@@ -224,5 +209,22 @@ color: #CBCBCB;
 @media screen and (max-width: 768px) {
     .hide-for-mobile{
         visibility: hidden;
+    }
+}
+
+/* ++++++++++++++++++++ cart page +++++++++++++++++++++++++ */
+
+.cart-item{
+    max-width: 732px;
+}
+.card-cart-summary{
+    width: 322px;
+    height: 277px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-cart-summary{
+        width: 80px;
+        height: 86px;
     }
 }

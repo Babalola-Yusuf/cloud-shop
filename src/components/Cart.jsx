@@ -19,25 +19,26 @@ const Cart = () => {
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        <div className=''>
+        <div className='flex gap-24'>
+          <div className=' border-r border-gray-300'>
           {cart.map(item => (
             <div className='flex gap-4'>
               <input type="checkbox" className='hidden md:flex' />
                   <div key={item.id} className="cart-item  items-center gap-5 border-b border-gray-300 py-4 ">
-                    <div className='flex h-24 md:h-72'>
-                    <img src={item.image} alt={item.name} className="card-cart-summary" />
-                    <div className="ml-4 flex-1 ">
-                <h3 className="font-bold">{item.name}</h3>
-                <p className='text-sm text-pink-700 font-semibold'>{item.category}</p>
-                <p className="font-bold text-2xl text-purpleNormal">{item.price}</p>
-                <p className="text-red-600 text-xs">Units Left: {item.unitsLeft}</p>
-                <div className=" hide-for-mobile flex space-x-2 items-center gap-4">
-                  <button className='text-purpleNormal text-3xl font-bold bg-black-light p-2 hover:bg-purpleNormal hover:text-white' onClick={() => decreaseQuantity(item.id)}>-</button>
-                  <p>{item.quantity}</p>
-                  <button className='text-purpleNormal text-3xl font-bold bg-black-light p-2 hover:bg-purpleNormal hover:text-white' onClick={() => increaseQuantity(item.id)}>+</button>
+                    <div className='flex h-24 md:h-72 '>
+                      <img src={item.image} alt={item.name} className="card-cart-summary" />
+                      <div className="ml-4 flex-1 w-96">
+                        <h3 className="font-bold">{item.name}</h3>
+                        <p className='text-sm text-pink-700 font-semibold'>{item.category}</p>
+                        <p className="font-bold text-2xl text-purpleNormal">{item.price}</p>
+                        <p className="text-red-600 text-xs">Units Left: {item.unitsLeft}</p>
+                        <div className=" hide-for-mobile flex space-x-2 items-center gap-4">
+                          <button className='text-purpleNormal text-3xl font-bold bg-black-light p-2 hover:bg-purpleNormal hover:text-white' onClick={() => decreaseQuantity(item.id)}>-</button>
+                          <p>{item.quantity}</p>
+                          <button className='text-purpleNormal text-3xl font-bold bg-black-light p-2 hover:bg-purpleNormal hover:text-white' onClick={() => increaseQuantity(item.id)}>+</button>
 
-                </div>
-              </div>
+                        </div>
+                      </div>
                     </div>
              
               <div className='hide-for-desktop '>
@@ -60,12 +61,17 @@ const Cart = () => {
             </div>
           
           ))}
-          <div className="mt-4 ">
-            <p className="font-bold">Total Cost: {totalCost}</p>
-            <p className="font-bold">Delivery Fee: N 1,000</p>
-            <p className="font-bold">Total Amount: {totalCost + 1000}</p>
-            <button onClick={() => navigate('/checkout')} className="mt-4 bg-purpleNormal text-white px-4 py-2 rounded">Proceed to Checkout</button>
           </div>
+          <div>
+            <p>Total Cost: ${totalCost.toFixed(2)}</p>
+            <div className="mt-4 ">
+              <p className="font-bold">Total Cost: {totalCost}</p>
+              <p className="font-bold">Delivery Fee: N 1,000</p>
+              <p className="font-bold">Total Amount: {totalCost + 1000}</p>
+              <button onClick={() => navigate('/checkout')} className="mt-4 bg-purpleNormal text-white px-4 py-2 rounded">Proceed to Checkout</button>
+            </div>
+          </div>
+          
         </div>
       )}
     </div>
