@@ -19,22 +19,22 @@ body {
     height: 154px;
 }
 
-.product-categories{
-    width: 896px;
-    height: 528px;
-}
 
 .bodyoilfont{
         font-family: "Oldenburg", serif;
         font-weight: 400;
         font-style: normal;
 }
-.bodyoil{
-    
-}
+
 .product-card{
     width: 297px;
-    height: 540px;
+    height: 540px;  
+}
+.product-card:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    cursor: pointer;
+
 }
 @media screen and (max-width: 768px) {
     .product-card{
