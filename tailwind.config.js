@@ -10,7 +10,7 @@ export default {
         '10px': '10px',
       },
       colors: {
-        
+          grey:'#606169',
           purpleNormal: '#720439',
           purpleHover: '#720439',
           purpleActive: '#D3B1C2',

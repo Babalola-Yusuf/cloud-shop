@@ -46,7 +46,7 @@ body {
 }
 
 .product-card:hover .product-image{
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {

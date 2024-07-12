@@ -19,18 +19,18 @@ const Cart = () => {
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        <div className='flex gap-24'>
+        <div className='flex flex-col md:flex-row gap-24'>
           <div className=' border-r border-gray-300'>
           {cart.map(item => (
             <div className='flex gap-4'>
               <input type="checkbox" className='hidden md:flex' />
                   <div key={item.id} className="cart-item  items-center gap-5 border-b border-gray-300 py-4 ">
-                    <div className='flex h-24 md:h-72 '>
+                    <div className='flex items-center h-24 md:h-72 '>
                       <img src={item.image} alt={item.name} className="card-cart-summary" />
-                      <div className="ml-4 flex-1 w-96">
-                        <h3 className="font-bold">{item.name}</h3>
-                        <p className='text-sm text-pink-700 font-semibold'>{item.category}</p>
-                        <p className="font-bold text-2xl text-purpleNormal">{item.price}</p>
+                      <div className="ml-4  flex-1 mt-10 w-96 ">
+                        <h3 className="md:font-bold text-sm md:text-2xl">{item.name}</h3>
+                        <p className='text-10px md:text-sm text-grey md:text-pink-700 font-semibold'>{item.category}</p>
+                        <p className="font-semibold md:font-bold text-sm md:text-2xl mt-2 text-purpleNormal">{item.price}</p>
                         <p className="text-red-600 text-xs">Units Left: {item.unitsLeft}</p>
                         <div className=" hide-for-mobile flex space-x-2 items-center gap-4">
                           <button className='text-purpleNormal text-3xl font-bold bg-black-light p-2 hover:bg-purpleNormal hover:text-white' onClick={() => decreaseQuantity(item.id)}>-</button>
