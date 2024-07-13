@@ -39,13 +39,13 @@ const Header = () => {
             >
               <FaTimes size={24} />
             </button>
-            <ul className="flex flex-col gap-8 items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 text-purpleActive p-4 lg:p-0 mt-20 lg:mt-5  ">
-              <li><Link to="/" className={`${isActive('/') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Home</Link></li>
-              <li><Link to="#bodyoil" className={`${isActive('#bodyoil') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Body Oil</Link></li>
-              <li><Link to="#natural" className={`${isActive('#natural') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Natural</Link></li>
-              <li><Link to="#moisturizer" className={`${isActive('#moisturizer') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Moisturizer</Link></li>
-              <li><Link to="#faceoil" className={`${isActive('#faceoil') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Face Oil</Link></li>
-              <li><Link to="#nightcream" className={`${isActive('#nightcream') ? 'text-purpleHover' : 'hover:text-purpleHover'}`} onClick={toggleSidebar}>Night Cream</Link></li>
+            <ul className="flex flex-col gap-8 items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 text-purpleNormal p-4 lg:p-0 mt-20 lg:mt-5  ">
+              <li><Link to="/" className={`${isActive('/') ? 'text-purpleActive' : 'hover:text-purpleActive'}`} onClick={toggleSidebar}>Home</Link></li>
+              <li><Link to="#bodyoil" className={`${isActive('#bodyoil') ? 'text-purpleActive' : 'hover:text-purpleActive'}`} onClick={toggleSidebar}>Body Oil</Link></li>
+              <li><Link to="#natural" className={`${isActive('#natural') ? 'text-purpleActive' : 'hover:text-purpleActive'}`} onClick={toggleSidebar}>Natural</Link></li>
+              <li><Link to="#moisturizer" className={`${isActive('#moisturizer') ? 'text-purpleActive' : 'hover:text-purpleActive'}`} onClick={toggleSidebar}>Moisturizer</Link></li>
+              <li><Link to="#faceoil" className={`${isActive('#faceoil') ? 'text-purpleActive' : 'hover:text-purpleActive'}`} onClick={toggleSidebar}>Face Oil</Link></li>
+              <li><Link to="#nightcream" className={`${isActive('#nightcream') ? 'text-purpleActive' : 'hover:text-purpleActive'}`} onClick={toggleSidebar}>Night Cream</Link></li>
             </ul>
           </nav>
 

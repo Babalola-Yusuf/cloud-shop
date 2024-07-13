@@ -194,28 +194,17 @@ color: #CBCBCB;
     }
 }
 
-.hide-for-desktop{
- visibility:hidden;   
-}
-@media screen and (max-width: 768px) {
-    .hide-for-desktop{
-        visibility: visible;
-        display: flex;
-    }
-}
-.hide-for-mobile{
-    visibility: visible;
-}
-@media screen and (max-width: 768px) {
-    .hide-for-mobile{
-        visibility: hidden;
-    }
-}
+
 
 /* ++++++++++++++++++++ cart page +++++++++++++++++++++++++ */
 
 .cart-item{
     max-width: 732px;
+}
+@media screen and (max-width: 768px) {
+    .cart-item{
+        max-width: 300px;
+    }
 }
 .card-cart-summary{
     width: 322px;
@@ -228,3 +217,20 @@ color: #CBCBCB;
         height: 86px;
     }
 }
+.hide-for-desktop{
+    visibility:hidden;   
+   }
+   @media screen and (max-width: 768px) {
+       .hide-for-desktop{
+           visibility: visible;
+           display: flex;
+       }
+   }
+   .hide-for-mobile{
+       visibility: visible;
+   }
+   @media screen and (max-width: 768px) {
+       .hide-for-mobile{
+           visibility: hidden;
+       }
+   }
