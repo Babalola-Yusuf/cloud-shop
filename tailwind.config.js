@@ -8,9 +8,11 @@ export default {
       },
       fontSize: {
         '10px': '10px',
+        '8px': '8px',
       },
       width: {
         cardInputDesktop: '448px',
+        cardInputMobile: '260px',
         bankDetailsDesktop: '280px',
       },
       colors: {
