@@ -9,7 +9,12 @@ export default {
       fontSize: {
         '10px': '10px',
       },
+      width: {
+        cardInputDesktop: '448px',
+        bankDetailsDesktop: '280px',
+      },
       colors: {
+          pageBackground: '#FAFAFA',
           enterCode: '#5D5D5D',
           greyLight: '#868686',
           grey:'#606169',

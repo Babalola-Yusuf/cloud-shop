@@ -11,7 +11,7 @@ import NightCream from '../components/NightCream';
 import Footer from '../components/Footer';
 
 const LandingPage = () => (
-  <div>
+  <div className='bg-pageBackground'>
     <Header />
     <HeroCarousel />
     <div className='flex justify-center items-center mt-20'>

@@ -234,3 +234,7 @@ color: #CBCBCB;
            visibility: hidden;
        }
    }
+     
+    .delete-all{
+      color: #ff0000;
+    } 

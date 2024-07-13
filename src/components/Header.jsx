@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className=" text-black-normal p-4 flex flex-col gap-5 justify-items-start ">
+    <header className=" text-black-normal p-4 flex flex-col gap-5 justify-items-start bg-white">
       <div className=" flex justify-between  ">
           <div className="flex flex-row-reverse lg:flex-row justify-between items-center gap-x-24 ">
           <div className="logo">
@@ -32,7 +32,7 @@ const Header = () => {
           </button>
           </div>
           
-          <nav className={`fixed flex flex-col bg-white z-50 top-0 right-0 w-64 h-full  shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out lg:relative lg:transform-none lg:translate-x-0 lg:shadow-none lg:bg-transparent lg:flex lg:w-auto lg:space-x-4 lg:items-center`}>
+          <nav className={` bg-white lg:font-bold fixed flex flex-col  z-50 top-0 right-0 w-64 h-full  shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out lg:relative lg:transform-none lg:translate-x-0 lg:shadow-none lg:bg-transparent lg:flex lg:w-auto lg:space-x-4 lg:items-center`}>
             <button
               className="absolute top-4 right-4 p-2 rounded focus:outline-none lg:hidden"
               onClick={toggleSidebar}
