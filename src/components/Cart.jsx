@@ -1,5 +1,5 @@
 // src/components/Cart.jsx
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../contexts/CartContext';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
@@ -15,13 +15,26 @@ const getNumericPrice = (price) => {
   return parseFloat(price.replace(/[^\d.]/g, '')) || 0;
 };
 
+/**
+ * The Cart component displays the items in the user's cart and calculates the total cost of the items.
+ * It also provides a way for the user to select all items, remove selected items, and proceed to checkout.
+ * @returns {JSX.Element}
+ */
 const Cart = () => {
   const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useContext(CartContext);
   const navigate = useNavigate();
   const [selectedItems, setSelectedItems] = useState([]);
 
+  /**
+   * Calculates the total cost of the items in the cart.
+   * @returns {number} The total cost of the items in the cart.
+   */
   const totalCost = cart.reduce((total, item) => total + getNumericPrice(item.price) * item.quantity, 0);
 
+  /**
+   * Handles the case where the user selects all items.
+   * @param {React.ChangeEvent<HTMLInputElement>} e - The event object.
+   */
   const handleSelectAll = (e) => {
     if (e.target.checked) {
       setSelectedItems(cart.map(item => item.id));
@@ -29,7 +42,13 @@ const Cart = () => {
       setSelectedItems([]);
     }
   };
-
+  useEffect(() => {
+    console.log("selected items",selectedItems);
+  }, [selectedItems]);
+  /**
+   * Handles the case where the user selects an item.
+   * @param {number} id - The id of the item to select.
+   */
   const handleSelectItem = (id) => {
     if (selectedItems.includes(id)) {
       setSelectedItems(selectedItems.filter(itemId => itemId !== id));
@@ -38,6 +57,9 @@ const Cart = () => {
     }
   };
 
+  /**
+   * Handles the case where the user removes selected items from the cart.
+   */
   const handleRemoveSelected = () => {
     selectedItems.forEach(id => removeFromCart(id));
     setSelectedItems([]);
@@ -53,15 +75,15 @@ const Cart = () => {
         ) : (
           <div className='flex flex-col md:flex-row gap-24'>
             <div className='border-gray-300'>
-              <div className="hidden md:flex justify-between mb-4">
-                <div>
+              <div className="hidden md:flex justify-between mb-4 bg-white p-5">
+                <div className=''>
                   <input
                     type="checkbox"
                     onChange={handleSelectAll}
                     checked={selectedItems.length === cart.length}
                     id='select-all'
                   />
-                  <label for='select-all' className="ml-2 text-purpleNormal hover:text-greyLight text-lg">Select all {cart.length} Items </label>
+                  <label htmlFor='select-all' className="ml-2 text-purpleNormal hover:text-greyLight text-lg">Select all {cart.length} Item(s) </label>
                 </div>
                 <button
                   onClick={handleRemoveSelected}
@@ -85,7 +107,7 @@ const Cart = () => {
                       <div className="ml-4 flex-1 md:mt-0 h-24 md:min-h-48 w-96 box-border">
                         <h3 className="font-normal md:font-bold text-sm md:text-2xl leading-5 md:leading-9">{item.name}</h3>
                         <p className='text-10px md:text-sm text-grey md:text-pink-700 font-semibold leading-3 md:mb-6 mt-0.5'>{item.category}</p>
-                        <p className="font-semibold md:font-bold text-sm md:text-2xl mt-2 text-purpleNormal">{formatNumber(getNumericPrice(item.price))}</p>
+                        <p className="font-semibold md:font-bold text-sm md:text-2xl mt-2 text-purpleNormal">N{formatNumber(getNumericPrice(item.price))}</p>
                         <p className="text-red-600 text-xs mb-6"> {item.unitsLeft} units left</p>
                         <div className="hide-for-mobile flex space-x-2 items-center gap-4">
                           <button className='text-white h-10 flex items-center text-3xl font-bold bg-purpleNormal p-2 hover:bg-purpleActive hover:text-white' onClick={() => decreaseQuantity(item.id)}>-</button>

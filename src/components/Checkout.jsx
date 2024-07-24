@@ -52,7 +52,7 @@ const Checkout = () => {
           <p className="text-10px lg:text-base ml-14">Enter the following details correctly and click <br /> 
           on <span className='font-bold'>Complete payment</span>  to pay.</p>
           {paymentMethod === 'card' && (
-            <div className="ml-7 lg:ml-14 mt-3 bg-yellow-200 ">
+            <div className="ml-7 lg:ml-14 mt-3  ">
               <div>
                 <p className='font-semibold text-10px lg:text-sm text-purpleNormal mb-2'>Name on card</p>
                 <input type="text" placeholder="input name" className=" block mb-2 w-cardInputMobile lg:w-cardInputDesktop px-6 py-2.5 lg:py-5 lg:rounded-xl border border-productInfoBorderColor text-8px lg:text-base" />
@@ -128,7 +128,7 @@ const Checkout = () => {
                   <p className=" hidden lg:flex justify-between">Sub Total({cart.length} items)  <span className=' text-greyLight'>N {formatNumber(totalCost)}</span> </p>
                   <p className=" hidden lg:flex justify-between">Shipping Fee <span className='text-greyLight'>N {formatNumber(1000)}</span></p>
                   <p className="hidden lg:flex justify-between mt-7 text-enterCode">Enter Code</p>
-                  <div className='hidden lg:flex items-center bg-yellow-200'>
+                  <div className='hidden lg:flex items-center '>
                     <input type="text" className="  border border-gray-300 p-2 w-full h-12 text-lg" placeholder="Coupon code" />
                     <button className=" hidden lg:flex bg-purpleNormal hover:bg-purpleActive text-white px-7 py-2 h-12"><img src="icons/search-white.svg" alt="" className='w-6 h-6' /></button>
                   </div>
