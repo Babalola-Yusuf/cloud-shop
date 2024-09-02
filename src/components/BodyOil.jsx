@@ -46,7 +46,7 @@ const ProductCard = ({ product, onAddToCart }) => {
           </div>
           <button
             id='cart-btn'
-            className="w-9 h-9 md:mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in"
+            className="w-9 h-9 md:mr-3 mt-1 bg-cartBtnColor rounded-full flex justify-center items-center hover:scale-125 hover:bg-cartBtnColorHover transition duration-300 ease-in-out"
             onClick={() => onAddToCart(product)}
           >
             <img src="icons/shopping_cart.svg" alt="shopping cart"/>

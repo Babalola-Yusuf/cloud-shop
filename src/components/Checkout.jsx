@@ -26,13 +26,12 @@ const Checkout = () => {
   const totalCost = cart.reduce((total, item) => total + getNumericPrice(item.price) * item.quantity, 0);
 
   const handlePayment = () => {
-    setShowModal(true);
-  };
+    setShowModal(true);  };
 
   return (
     <div>
       <Header />
-        <div className="checkout  py-5 lg:py-8 px-4">
+      <div className="checkout  py-5 lg:py-8 px-4">
       <h2 className="text-3xl font-bold mb-4">Checkout</h2>
       <h3 className="text-2xl text-gray-600 font-normal mb-2">Select your preferred payment method</h3>
       <div className='flex flex-col mt-24 lg:flex-row gap-4 justify-between items-start'>
@@ -40,7 +39,7 @@ const Checkout = () => {
         <div className="mb-12">
           <label className="flex items-center mb-2">
             <input
-              className="accent-purpleNormal lg:h-8 lg:w-8 mr-6"
+              className="accent-purpleNormal lg:h-8 lg:w-8 mr-6"  
               type="radio"
               name="paymentMethod"
               value="card"
